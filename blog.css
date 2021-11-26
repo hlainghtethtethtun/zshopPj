@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-image: url("images/bg3.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:top;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 200px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 0;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    float: left;
+    margin-left: 30px;
+    text-align: center;
+    /* line-height: 40px; */
+    /* background-color: blue; */
+}
+
+nav ul li a{
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #afaaaa;
+    font-size: 14px;
+    /* background-color: blue; */
+}
+
+nav ul li a:hover{
+    color: #000;
+    background-color: #fff;
+    transition: background-color 2s ease;
+}
+
+/* ==================================Nav======================================================== */
+
+.blog-section-1 , .blog-section-2 , .blog-section-3{
+    height: 65vh;
+    display: flex;
+}
+
+.blog-section-1 .image{
+    width: 500px;
+    background-image: url('images/15.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.blog-section-2 .image{
+    width: 500px;
+    background-image: url('images/16.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.blog-section-3 .image{
+    width: 500px;
+    background-image: url('images/14.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+/* =========================image======================== */
+.blog-section-1 .aboutMe , .blog-section-2 .aboutMe , .blog-section-3 .aboutMe{
+    width: 500px;
+    background-color: #fff;
+    padding: 70px 70px;
+    font-family: sans-serif;
+}
+
+.blog-section-1 .aboutMe h1 , .blog-section-3 .aboutMe h1{
+    text-transform: uppercase;
+}
+
+.blog-section-2 .aboutMe h1 {
+    text-transform: uppercase;
+    text-align: end;
+}
+/* ==============================about me h1==================== */
+.blog-section-1 .aboutMe p , .blog-section-3 .aboutMe p{
+    color: #757575;
+    font-size: 15px;
+
+    margin-top: 30px;
+}
+
+.blog-section-2 .aboutMe p{
+    color: #757575;
+    font-size: 15px;
+    text-align: end;
+    margin-top: 30px;
+}
+/* ==================================blog-section======================================================== */
+
+.footer-section{
+    background-color: black;
+
+    display: flex; 
+    padding: 70px 0;
+    color: white;
+
+    font-family: sans-serif;
+}
+
+.footer-section .aboutUs {
+    width: 350px;
+    padding: 0 30px 0 45px;
+}
+
+.footer-section .recentPost{
+    width: 300px;
+    padding-right: 30px;
+}
+
+.footer-section .findUs {
+    width: 350px;
+}
+
+.footer-section .aboutUs h3 , .footer-section .recentPost h3 , .footer-section .findUs h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    border-left: 3px solid #047070;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-section .aboutUs p{
+    color: #bdbdbd;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.7rem;
+}
+
+.footer-section .aboutUs p:last-child{
+    margin-top: 17px;
+}
+
+.footer-section .recentPost ul li{
+    list-style: none;
+    border-bottom: 1px solid #5f5f5f;
+    padding: 10px 0;
+}
+
+.footer-section .recentPost ul li:last-child{
+    border-bottom: none;
+    padding-top: 10px;
+}
+
+.footer-section .recentPost ul li a{
+    color: #979797;
+    font-size: 13px;
+
+    text-decoration: none;
+}
+
+.footer-section .recentPost ul li a:hover{
+    color: #858585;
+}
+
+.footer-section .recentPost ul li span , .footer-section .findUs ul li span{
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-section .findUs .address , .footer-section .findUs .hour{
+    padding: 0 10px;
+}
+
+.footer-section .findUs .address h4{
+    color: #e7e7e7;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.footer-section .findUs .address ul li{
+    color: #b4b4b4;
+    font-size: 15px;
+    list-style: none;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.footer-section .findUs .hour h4{
+    color: #e7e7e7;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+.footer-section .findUs .hour ul{
+    margin-top: 10px;
+}
+
+.footer-section .findUs .hour ul li{
+    color: #b4b4b4;
+    font-size: 15px;
+    list-style: none;
+}
+/* ===========================================Footer-section================================================= */
+footer{
+    text-align: center;
+    font-family:sans-serif;
+    font-size: 16px;
+    padding: 40px 0;
+}
+
+footer .icon ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .icon ul li{
+    list-style: none;
+    margin-bottom: 8px;
+    margin-left: 14px;
+}
+
+footer .icon ul li a{
+    color: #d4d4d4;
+    font-size: 21px;
+}
+
+footer .icon ul li a:hover{
+    color: #c7c7c7;
+}
+
+footer .copy p{
+    color: #d4d4d4;
+}
+footer .copy p small{
+    font-size: 12px;
+}
+footer .copy p a{
+    color: #d4d4d4;
+}
+footer .copy p a:hover{
+    color: #c7c7c7;
+}
